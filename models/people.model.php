@@ -19,11 +19,11 @@ class PeopleModel{
     }
 
     public static function Update($dni,$name,$last_name ){
-//        $query="insert into people (dni, name, last_name) values ('{$dni}', '{$name}', '{$last_name}')";
-//        if(!DB::GetConnection()->query($query)){
-//            return "no se pudo registrar";
-//        }
-//        return "se registro correctamente";
+        $query="update people set name = '{$name}', last_name = '{$last_name}' where dni = '{$dni}'";
+        if(!DB::GetConnection()->query($query)){
+            return "no se pudo actualizar";
+        }
+        return "se actualizo correctamente ";
     }
 
     public static function Delete($dni){

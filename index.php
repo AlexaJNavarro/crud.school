@@ -47,8 +47,8 @@ $people = PeopleModel::FindAll();
                     <td> <?= $row['name'] ?> </td>
                     <td> <?= $row['last_name'] ?> </td>
                     <td>
-                        <a class="btn btn-danger" href="/views/people-delete.view.php?dni=<?= $row['dni'] ?>"> Eliminar </a>
-                        <a class="btn btn-success" href=""> Actualizar </a>
+                        <a class="btn btn-danger" href="people-delete.view.php?dni=<?= $row['dni'] ?>"> Eliminar </a>
+                        <a class="btn btn-success" href="people-update.view.php?dni=<?= $row['dni'] ?>"> Actualizar </a>
                     </td>
                 </tr>
             <?php } ?>
