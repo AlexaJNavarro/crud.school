@@ -24,6 +24,11 @@ $people = PeopleModel::FindAll();
         <h1 class="text-center mt-2">
             CRUD People
         </h1>
+
+        <div class="d-grid gap-2">
+            <a href="views/people-create.view.php" class="btn btn-primary my-3" type="button">Crear</a>
+        </div>
+
         <table class="table">
             <thead>
             <tr>
