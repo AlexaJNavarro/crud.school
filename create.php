@@ -1,6 +1,6 @@
 <?php
 require_once './controllers/people.controller.php';
-$result = PeopleController::Update($_GET['dni'], $_POST['name'], $_POST['last_name']);
+$result = PeopleController::Create($_POST['dni'], $_POST['name'], $_POST['last_name']);
 ?>
 
 <!doctype html>
@@ -15,16 +15,16 @@ $result = PeopleController::Update($_GET['dni'], $_POST['name'], $_POST['last_na
           integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 <body>
-    <h1> <?= $result ?> </h1>
-    <button class="btn btn-primary" id="regresar">
-        Regresar
-    </button>
+<h1> <?= $result ?> </h1>
+<button class="btn btn-primary" id="regresar">
+    Regresar
+</button>
 
-    <script>
-        const $regresar = document.getElementById('regresar')
-        $regresar.addEventListener('click', () => {
-            location.href = "/index.php"
-        })
-    </script>
+<script>
+    const $regresar = document.getElementById('regresar')
+    $regresar.addEventListener('click', () => {
+        location.href = "/index.php"
+    })
+</script>
 </body>
 </html>

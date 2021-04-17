@@ -22,7 +22,7 @@
     <script>
         const $regresar = document.getElementById('regresar')
         $regresar.addEventListener('click', () => {
-            location.href = "http://localhost:8000/index.php"
+            location.href = "/index.php"
         })
     </script>
 </body>
